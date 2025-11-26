@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/shift-innovatie.github.io/",
+  base: "/shift-website-refresh/",
   server: {
     host: "::",
     port: 8080,
