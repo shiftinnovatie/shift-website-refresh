@@ -54,9 +54,9 @@ export const Hero = () => {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
             >
-              Turn your ideas{" "}
+              Jonge Denkers,{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                into capital
+                Slimme Oplossingen!
               </span>
             </motion.h1>
             <motion.p
@@ -65,9 +65,7 @@ export const Hero = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-lg md:text-xl text-muted-foreground max-w-xl"
             >
-              Wat maakt uw bedrijf innovatief, nu en in de toekomst? Wij helpen u deze vraag
-              te beantwoorden. Daarnaast zijn onze consultants ook ervaren in het beoordelen
-              van innovativiteit.
+              Wat maakt uw bedrijf innovatief, nu en in de toekomst? Wij helpen u deze vraag te beantwoorden. In een wereld vol verandering is scherp inzicht essentieel om voorop te blijven lopen. Of het nu gaat om slimme energieoplossingen of een toekomstbestendige marktstrategie, wij denken met u mee.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -77,7 +75,7 @@ export const Hero = () => {
             >
               <Button
                 size="lg"
-                onClick={() => scrollToSection("about")}
+                onClick={() => scrollToSection("services")}
                 className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-elegant group"
               >
                 Ontdek meer
