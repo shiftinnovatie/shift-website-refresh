@@ -50,22 +50,43 @@ export const About = () => {
           <div className="w-20 h-1 bg-gradient-primary mx-auto mb-8" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
-          {competencies.map((competency, index) => (
-            <motion.div
-              key={competency.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-card p-6 rounded-xl shadow-card-hover hover:shadow-elegant transition-all duration-300 border border-border group hover:border-primary"
-            >
-              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <competency.icon className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">{competency.title}</h3>
-              <p className="text-muted-foreground">{competency.description}</p>
-            </motion.div>
-          ))}
+        <div className="flex flex-col items-center gap-8 mb-24">
+          {/* Eerste rij: 3 competenties */}
+          <div className="grid md:grid-cols-3 gap-8 w-full max-w-5xl">
+            {competencies.slice(0, 3).map((competency, index) => (
+              <motion.div
+                key={competency.title}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-card p-6 rounded-xl shadow-card-hover hover:shadow-elegant transition-all duration-300 border border-border group hover:border-primary"
+              >
+                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <competency.icon className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{competency.title}</h3>
+                <p className="text-muted-foreground">{competency.description}</p>
+              </motion.div>
+            ))}
+          </div>
+          {/* Tweede rij: 2 competenties gecentreerd */}
+          <div className="grid md:grid-cols-2 gap-8 w-full max-w-3xl">
+            {competencies.slice(3, 5).map((competency, index) => (
+              <motion.div
+                key={competency.title}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: (index + 3) * 0.1 }}
+                className="bg-card p-6 rounded-xl shadow-card-hover hover:shadow-elegant transition-all duration-300 border border-border group hover:border-primary"
+              >
+                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <competency.icon className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{competency.title}</h3>
+                <p className="text-muted-foreground">{competency.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         {/* Over ons sectie */}
