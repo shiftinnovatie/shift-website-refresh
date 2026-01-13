@@ -37,7 +37,7 @@ const consultants: ConsultantInfo[] = [
     description:
       "Marijn heeft na zijn bachelor Natuurwetenschap & Innovatiemanagement een jaar gewerkt als duurzaamheidsadviseur. Hij gaf advies over het verduurzamen van industriële locaties en sportverenigingen. Hier kwamen onderwerpen zoals zonnepanelen, warmtepompen, isolatie en energieopslag regelmatig aan bod. Hierna heeft hij besloten verder te leren en de master Energy Science te volgen. Deze master focust zich op de natuurkundige aspecten van energie en hoe het energiesysteem, van producent tot consument, is ingericht. Daarnaast is hij werkzaam als 'smart energy consultant' waarbij hij oplossingen zoekt omtrent netcongestie problematiek bij bedrijven.",
     email: "m.valk@shift-innovatie.nl",
-    phone: "06-37475256",
+    phone: "06-12345678",
   },
   {
     name: "Tycho Sangers",
