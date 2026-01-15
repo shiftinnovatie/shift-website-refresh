@@ -12,7 +12,7 @@ export const Footer = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <img src={shiftLogo} alt="Shift Innovatie" className="h-10 brightness-0 invert" />
+              <img src={shiftLogo} alt="Shift Innovatie" className="h-10" />
             </div>
             <p className="text-background/70">
               Turn your ideas into capital met onze innovatieve consultancy diensten.
