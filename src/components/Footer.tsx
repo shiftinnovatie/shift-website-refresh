@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import shiftLogo from "@/assets/shift-logo.png";
 
 export const Footer = () => {
   return (
@@ -11,10 +12,7 @@ export const Footer = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">S</span>
-              </div>
-              <span className="text-xl font-bold">Shift Innovatie</span>
+              <img src={shiftLogo} alt="Shift Innovatie" className="h-10 brightness-0 invert" />
             </div>
             <p className="text-background/70">
               Turn your ideas into capital met onze innovatieve consultancy diensten.
