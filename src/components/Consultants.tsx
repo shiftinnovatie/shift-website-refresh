@@ -24,7 +24,7 @@ const consultants: ConsultantInfo[] = [
     name: "Jeroen Bos",
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/1490bfda1764f7681dbde1e40074b6747d738674-5208x3476.jpg?rect=866,0,3476,3476&w=512&h=512",
-    study: "Sustainable Development, track Energy & Materials",
+    study: "Master Sustainable Development, track Energy & Materials",
     description:
       "Jeroen zit momenteel in het eerste jaar van de master Sustainable Development, gespecialiseerd in de track Energy & Materials. Binnen deze studie staat niet alleen het duurzaam ontwikkelen van energie en materiaalstromen centraal, maar ook het vaststellen van een rechtvaardige transitie naar een duurzame samenleving.",
     email: "j.bos@shift-innovatie.nl",
@@ -43,7 +43,7 @@ const consultants: ConsultantInfo[] = [
     name: "Tycho Sangers",
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/b550804eb359d56cec8d1e919d62ce56d1037a7c-5198x3462.png?rect=868,0,3462,3462&w=512&h=512",
-    study: "Energy Science",
+    study: "Master Energy Science",
     description:
       "Tycho heeft zijn bachelor Natuurwetenschap & Innovatiemanagement afgerond en studeert nu de Master Energy Science. Zijn hoofdinteresse ligt bij het optimaliseren van de energietransitie, maar hij heeft een brede interesse in verschillende disciplines, zoals Innovatie, Duurzaamheid en Beleid.",
     email: "t.sangers@shift-innovatie.nl",
@@ -63,7 +63,7 @@ const consultants: ConsultantInfo[] = [
     name: "Guust Bartels",
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/8a0b9a92d0147d4ea5ef0c265f56b472f5b289d6-834x1166.jpg?rect=0,166,834,834&w=512&h=512",
-    study: "Bachelor student Natuurwetenschap en Innovatiemanagement",
+    study: "Natuurwetenschap & Innovatiemanagement",
     description:
       "Guust is een bachelor student Natuurwetenschap en Innovatiemanagement. Hij is breed geïnteresseerd in de energie en transport sector. Hiernaast heeft hij zich tijdens zijn studie extra verdiept in de wiskunde. Guust is geïnteresseerd in het implementeren van technische innovaties. Naast zijn studie is Guust een jaar lang fulltime actief geweest als penningmeester van een studievereniging. Hier heeft hij veel geleerd over het beheren van het vermogen van een vereniging.",
     email: "g.bartels@shift-innovatie.nl",
