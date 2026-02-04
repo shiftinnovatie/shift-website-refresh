@@ -8,6 +8,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Mail, Phone } from "lucide-react";
+import floorDeJongImage from "@/assets/floor-de-jong.jpg";
 
 interface ConsultantInfo {
   name: string;
@@ -31,8 +32,7 @@ const consultants: ConsultantInfo[] = [
   },
   {
     name: "Floor de Jong",
-    image:
-      "https://cdn.sanity.io/images/mwby6hwm/production/f618e016c6178a8fd67220a5c95af92f4398c92d-804x804.jpg?w=512&h=512",
+    image: floorDeJongImage,
     study: "Natuurwetenschap & Innovatiemanagement",
     description:
       "Marijn heeft na zijn bachelor Natuurwetenschap & Innovatiemanagement een jaar gewerkt als duurzaamheidsadviseur. Hij gaf advies over het verduurzamen van industriële locaties en sportverenigingen. Hier kwamen onderwerpen zoals zonnepanelen, warmtepompen, isolatie en energieopslag regelmatig aan bod. Hierna heeft hij besloten verder te leren en de master Energy Science te volgen. Deze master focust zich op de natuurkundige aspecten van energie en hoe het energiesysteem, van producent tot consument, is ingericht. Daarnaast is hij werkzaam als 'smart energy consultant' waarbij hij oplossingen zoekt omtrent netcongestie problematiek bij bedrijven.",
