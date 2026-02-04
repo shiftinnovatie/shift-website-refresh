@@ -31,7 +31,7 @@ const clientProjects = [
     name: "UU-DAB",
     logo: "https://cdn.sanity.io/images/mwby6hwm/production/cb49729f883a2ae41f071d6761b65a6e8d10f604-500x240.png",
     description: "Shift-Innovatie heeft, in opdracht van de Universiteit Utrecht, een marktanalyse uitgevoerd voor een taalontwikkelingstoornis- en een werkgeheugentest ontwikkeld door Utrecht University Developmental Assessment Battery. Met behulp van interviews is de interesse van verschillende partijen op de markt geanalyseerd en als afsluiting is er een rapport opgesteld voor de beste strategie voor marktimplementatie.",
-    year: "",
+    year: "2022",
   },
   {
     name: "UMC Ureka Mega Challenge",
@@ -262,7 +262,7 @@ export const Services = () => {
                           )}
                         </div>
                         <h4 className="font-bold text-lg mb-2 text-center">{project.name}</h4>
-                        <p className="text-sm text-muted-foreground flex-grow">{project.description}</p>
+                        <p className="text-sm text-muted-foreground flex-grow text-justify">{project.description}</p>
                         {project.year && (
                           <p className="text-xs text-primary font-medium mt-4">
                             Uitgevoerd: {project.year}
