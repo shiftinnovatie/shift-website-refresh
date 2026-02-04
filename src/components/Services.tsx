@@ -11,6 +11,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import hierLogo from "@/assets/hier-klimaatbureau-logo.png";
+import palmsensLogo from "@/assets/palmsens-logo.png";
 
 const clientProjects = [
   {
@@ -39,13 +41,13 @@ const clientProjects = [
   },
   {
     name: "Klimaatbureau HIER",
-    logo: "",
+    logo: hierLogo,
     description: "Shift Innovatie heeft het energieverbruik van elektronische apparaten in huishoudens in kaart gebracht. Hierbij is elk apparaat geanalyseerd en vergeleken met een zogenoemde 'Best Available Technology'. Het resulterende rapport gebruikt HIER Klimaatbureau voor hun energiebesparingstool.",
     year: "2016",
   },
   {
     name: "Palmsens",
-    logo: "",
+    logo: palmsensLogo,
     description: "Shift Innovatie heeft voor Palmsens een kwantitatieve publicatie analyse uitgevoerd, om inzicht te krijgen van de state-of-the-art wetenschap in het veld van potentiostaten. Hierbij zijn de huidige en toekomstige kansen in de markt uitgelicht. Concreet werd hiervoor een full-text search gedaan naar deze producten in wetenschappelijke publicaties.",
     year: "2020",
   },
