@@ -53,7 +53,7 @@ const consultants: ConsultantInfo[] = [
     name: "Fabian Tobben",
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/76e1d7bf341290d1b91526ee0bccf2a6839eba0a-4497x3456.jpg?rect=521,0,3456,3456&w=512&h=512",
-    study: "Natuurwetenschap en Innovatiemanagement",
+    study: "Master Earth, Surface and Water",
     description:
       "Fabian is bachelor student Natuurwetenschap en Innovatiemanagement en volgt de energie en transport track. Hij is erg geïnteresseerd in het integreren van technologie in de maatschappij. Verder hoopt hij bij te kunnen dragen aan interessante vraagstukken met een creatieve blik.",
     email: "f.tobben@shift-innovatie.nl",
@@ -73,7 +73,7 @@ const consultants: ConsultantInfo[] = [
     name: "Philip Smids",
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/52c95902aad935c69957e4dee6248f4f798f2f62-1568x2088.jpg?rect=0,260,1568,1568&w=512&h=512",
-    study: "Bachelor student Natuurwetenschap en Innovatiemanagement",
+    study: "Master Complex Systems Engineering and Management",
     description:
       "Philip is bachelor student Natuurwetenschap & Innovatiemanagement, waarbinnen hij zich heeft gespecialiseerd in de Life Sciences. Tijdens zijn studie heeft hij zich verder verdiept in het Sociaal Ondernemerschap, waarbij hij erg geïnteresseerd is in maatschappelijk verantwoord ondernemen en het opstellen van duurzame bedrijfsmodellen. Verder hoopt hij bij te dragen aan het vinden van creatieve oplossingen voor uitdagende vraagstukken.",
     email: "p.smids@shift-innovatie.nl",
@@ -177,7 +177,7 @@ const ConsultantCard = ({
         </div>
         <h3 className="text-lg font-bold mt-4 text-center">{consultant.name}</h3>
         {consultant.study && (
-          <p className="text-sm text-muted-foreground">{consultant.study}</p>
+          <p className="text-sm text-muted-foreground text-center">{consultant.study}</p>
         )}
       </motion.div>
 
