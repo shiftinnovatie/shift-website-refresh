@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import { Mail, Phone } from "lucide-react";
 import floorDeJongImage from "@/assets/floor-de-jong.jpg";
+import larsDonathImage from "@/assets/lars-donath.jpg";
 
 interface ConsultantInfo {
   name: string;
@@ -81,8 +82,7 @@ const consultants: ConsultantInfo[] = [
   },
   {
     name: "Lars Donath",
-    image:
-      "https://cdn.sanity.io/images/mwby6hwm/production/1490bfda1764f7681dbde1e40074b6747d738674-5208x3476.jpg?rect=866,0,3476,3476&w=512&h=512",
+    image: larsDonathImage,
     study: "Natuurwetenschap & Innovatiemanagement",
     description:
       "Lars is bachelor student Natuurwetenschap & Innovatiemanagement en hij volgt de track energie en transport. Hij is geïnteresseerd in alles wat te maken heeft met innovatie, technologie en duurzaamheid. Verder hoopt hij hier nog meer over te leren en zo bij te kunnen dragen aan het maken van impact.",
