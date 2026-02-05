@@ -70,7 +70,6 @@ export const Footer = () => {
             <ul className="space-y-2 text-primary-foreground/80">
               <li>Utrecht, Nederland</li>
               <li>info@shift-innovatie.nl</li>
-              <li>+31 6 1234 5678</li>
             </ul>
           </motion.div>
         </div>
