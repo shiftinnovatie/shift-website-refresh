@@ -25,7 +25,7 @@ const consultants: ConsultantInfo[] = [
     name: "Jeroen Bos",
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/1490bfda1764f7681dbde1e40074b6747d738674-5208x3476.jpg?rect=866,0,3476,3476&w=512&h=512",
-    study: "Master Sustainable Development, track Energy & Materials",
+    study: "Master Sustainable Development",
     description:
       "Jeroen zit momenteel in het eerste jaar van de master Sustainable Development, gespecialiseerd in de track Energy & Materials. Binnen deze studie staat niet alleen het duurzaam ontwikkelen van energie en materiaalstromen centraal, maar ook het vaststellen van een rechtvaardige transitie naar een duurzame samenleving.",
     email: "j.bos@shift-innovatie.nl",
