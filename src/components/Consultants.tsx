@@ -31,15 +31,6 @@ const consultants: ConsultantInfo[] = [
     phone: "06-81156020",
   },
   {
-    name: "Floor de Jong",
-    image: floorDeJongImage,
-    study: "Natuurwetenschap & Innovatiemanagement",
-    description:
-      "Marijn heeft na zijn bachelor Natuurwetenschap & Innovatiemanagement een jaar gewerkt als duurzaamheidsadviseur. Hij gaf advies over het verduurzamen van industriële locaties en sportverenigingen. Hier kwamen onderwerpen zoals zonnepanelen, warmtepompen, isolatie en energieopslag regelmatig aan bod. Hierna heeft hij besloten verder te leren en de master Energy Science te volgen. Deze master focust zich op de natuurkundige aspecten van energie en hoe het energiesysteem, van producent tot consument, is ingericht. Daarnaast is hij werkzaam als 'smart energy consultant' waarbij hij oplossingen zoekt omtrent netcongestie problematiek bij bedrijven.",
-    email: "f.dejong@shift-innovatie.nl",
-    phone: "06-12345678",
-  },
-  {
     name: "Tycho Sangers",
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/b550804eb359d56cec8d1e919d62ce56d1037a7c-5198x3462.png?rect=868,0,3462,3462&w=512&h=512",
@@ -78,6 +69,25 @@ const consultants: ConsultantInfo[] = [
       "Philip is master student Complex Systems Engineering and Management aan de TU Delft, waarbinnen hij zich heeft gespecialiseerd in de transport en logistiek. Tijdens zijn bachelor heeft hij zich verder verdiept in het sociaal ondernemerschap, waarbij hij erg geïnteresseerd is in maatschappelijk verantwoord ondernemen en het opstellen van duurzame bedrijfsmodellen. Verder hoopt hij bij te dragen aan het vinden van creatieve oplossingen en uitdagende vraagstukken.",
     email: "p.smids@shift-innovatie.nl",
     phone: "+31 6 11451827",
+  },
+  {
+    name: "Floor de Jong",
+    image: floorDeJongImage,
+    study: "Natuurwetenschap & Innovatiemanagement",
+    description:
+      "Marijn heeft na zijn bachelor Natuurwetenschap & Innovatiemanagement een jaar gewerkt als duurzaamheidsadviseur. Hij gaf advies over het verduurzamen van industriële locaties en sportverenigingen. Hier kwamen onderwerpen zoals zonnepanelen, warmtepompen, isolatie en energieopslag regelmatig aan bod. Hierna heeft hij besloten verder te leren en de master Energy Science te volgen. Deze master focust zich op de natuurkundige aspecten van energie en hoe het energiesysteem, van producent tot consument, is ingericht. Daarnaast is hij werkzaam als 'smart energy consultant' waarbij hij oplossingen zoekt omtrent netcongestie problematiek bij bedrijven.",
+    email: "f.dejong@shift-innovatie.nl",
+    phone: "06-12345678",
+  },
+  {
+    name: "Lars Donath",
+    image:
+      "https://cdn.sanity.io/images/mwby6hwm/production/1490bfda1764f7681dbde1e40074b6747d738674-5208x3476.jpg?rect=866,0,3476,3476&w=512&h=512",
+    study: "Natuurwetenschap & Innovatiemanagement",
+    description:
+      "Lars is bachelor student Natuurwetenschap & Innovatiemanagement en hij volgt de track energie en transport. Hij is geïnteresseerd in alles wat te maken heeft met innovatie, technologie en duurzaamheid. Verder hoopt hij hier nog meer over te leren en zo bij te kunnen dragen aan het maken van impact.",
+    email: "l.donath@shift-innovatie.nl",
+    phone: "+31 6 30068167",
   },
 ];
 
@@ -236,7 +246,7 @@ export const Consultants = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const consultantsRow1 = consultants.slice(0, 4);
-  const consultantsRow2 = consultants.slice(4, 6);
+  const consultantsRow2 = consultants.slice(4, 7);
   const advisorsRow1 = advisors.slice(0, 4);
   const advisorsRow2 = advisors.slice(4, 6);
 
@@ -265,7 +275,7 @@ export const Consultants = () => {
               />
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             {consultantsRow2.map((consultant, index) => (
               <ConsultantCard
                 key={consultant.name}
