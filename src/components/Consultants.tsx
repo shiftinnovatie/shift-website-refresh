@@ -78,7 +78,7 @@ const consultants: ConsultantInfo[] = [
     description:
       "Floor is een bachelor student Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt hij de track energie en transport en daarnaast volgt hij een minor in Economics and Business Economics. Hij is geïnteresseerd in het raakvlak van duurzaamheid, technologie en ondernemerschap. Verder kijkt hij ernaar uit om bij te dragen aan het helpen van bedrijven bij het oplossen van duurzame en innovatieve vraagstukken.",
     email: "f.dejong@shift-innovatie.nl",
-    phone: "06-12345678",
+    phone: "+31 6 80129607",
   },
   {
     name: "Lars Donath",
