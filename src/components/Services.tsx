@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Briefcase, Zap, ChevronDown, ChevronUp, FileText, BarChart3, Database, Battery, Leaf, Search, ChevronLeft, ChevronRight } from "lucide-react";
+import { Briefcase, Zap, ChevronDown, ChevronUp, ChevronLeft, ChevronRight } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -11,83 +11,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import hierLogo from "@/assets/hier-klimaatbureau-logo.png";
-import palmsensLogo from "@/assets/palmsens-logo.png";
-
-const clientProjects = [
-  {
-    name: "ReMediZ",
-    logo: "https://cdn.sanity.io/images/mwby6hwm/production/40809a42347474b47973d0b16ca21b071960456e-200x200.jpg",
-    description: "Shift innovatie heeft voor ReMediZ een marktonderzoek gedaan voor uitbreidingsmogelijkheden in Europa. Hierbij is gebruikt gemaakt van een multicriteria-analyse om te bepalen welke aan welke criteria een nieuwe markt moet voldoen. Uiteindelijk is er een advies voor uitbreidingsmogelijkheden opgesteld inclusief contactgegevens om de juiste partijen te benaderen.",
-    year: "2023",
-  },
-  {
-    name: "Unie van Waterschappen",
-    logo: "https://cdn.sanity.io/images/mwby6hwm/production/4e23a50b295fca1fe92cddab3d3a8c619ea22fc8-1300x500.png",
-    description: "Shift Innovatie onderzoek gedaan naar het gebruik van scenario's in de waterschappen. In dit tweedelige onderzoek hebben wij onderzocht hoe de inhoud van de scenario's van waterschappen verschillen en hoe ze worden gebruikt. Aan de hand van dit onderzoek is een leergang opgezet vanuit de Unie van Waterschappen om de waterschappen beter te ondersteunen in het gebruik van scenario's.",
-    year: "2021",
-  },
-  {
-    name: "UU-DAB",
-    logo: "https://cdn.sanity.io/images/mwby6hwm/production/cb49729f883a2ae41f071d6761b65a6e8d10f604-500x240.png",
-    description: "Shift-Innovatie heeft, in opdracht van de Universiteit Utrecht, een marktanalyse uitgevoerd voor een taalontwikkelingstoornis- en een werkgeheugentest ontwikkeld door Utrecht University Developmental Assessment Battery. Met behulp van interviews is de interesse van verschillende partijen op de markt geanalyseerd en als afsluiting is er een rapport opgesteld voor de beste strategie voor marktimplementatie.",
-    year: "2022",
-  },
-  {
-    name: "UMC Ureka Mega Challenge",
-    logo: "https://cdn.sanity.io/images/mwby6hwm/production/ec7198f837bc15dae2c8ef1e4163b2ecd584fc9b-472x261.png",
-    description: "In samenwerking met het incubatordepartement van het UMC Utrecht geeft Shift Innovatie workshops aan beginnende ondernemers over het opzetten van een bedrijf en businessplan. Tevens heeft Shift al meer dan 20 finalisten begeleid bij het opzetten van hun businessplan over de jaren heen. Zij helpen hierbij bij het invullen van het businessplan of opzetten van financieel plan van de finalisten.",
-    year: "sinds 2012 op jaarlijkse basis",
-  },
-  {
-    name: "Klimaatbureau HIER",
-    logo: hierLogo,
-    description: "Shift Innovatie heeft het energieverbruik van elektronische apparaten in huishoudens in kaart gebracht. Hierbij is elk apparaat geanalyseerd en vergeleken met een zogenoemde 'Best Available Technology'. Het resulterende rapport gebruikt HIER Klimaatbureau voor hun energiebesparingstool.",
-    year: "2016",
-  },
-  {
-    name: "Palmsens",
-    logo: palmsensLogo,
-    description: "Shift Innovatie heeft voor Palmsens een kwantitatieve publicatie analyse uitgevoerd, om inzicht te krijgen van de state-of-the-art wetenschap in het veld van potentiostaten. Hierbij zijn de huidige en toekomstige kansen in de markt uitgelicht. Concreet werd hiervoor een full-text search gedaan naar deze producten in wetenschappelijke publicaties.",
-    year: "2020",
-  },
-];
-
-const strategischServices = [
-  {
-    icon: FileText,
-    title: "Businesscase-ontwikkeling",
-    description: "Wij ondersteunen bij het vertalen van een sterk idee naar een heldere en overtuigende businesscase. Daarbij ligt de focus op haalbaarheid, waardecreatie en strategische positionering. Of het nu gaat om een nieuw product, dienst of verdienmodel, wij zorgen dat uw plannen onderbouwd en professioneel gepresenteerd zijn richting klanten, partners en investeerders.",
-  },
-  {
-    icon: BarChart3,
-    title: "Marktonderzoek en Concurrentieanalyse",
-    description: "In een markt die continu in beweging is, is inzicht essentieel. Wij brengen de marktstructuur, klantbehoeften en de concurrenten helder in kaart. Met een scherp oog voor trends helpen we u strategische keuzes te maken die passen bij uw ambities en u onderscheiden van de concurrentie.",
-  },
-  {
-    icon: Database,
-    title: "Data-analyse",
-    description: "Wij zetten data om in bruikbare inzichten. Denk aan klantsegmentatie, procesoptimalisatie of risicobeoordeling. Door gegevens effectief te analyseren en te interpreteren, ondersteunen we onderbouwde besluitvorming en helpen we u kansen te identificeren en beter te benutten.",
-  },
-];
-
-const energieServices = [
-  {
-    icon: Battery,
-    title: "Netcongestiescan",
-    description: "Het Nederlandse elektriciteitsnet raakt steeds voller. Bedrijven ervaren hierdoor beperkingen bij het afnemen of terugleveren van stroom. Wij analyseren uw huidige en toekomstige energiebehoefte, en verkennen slimme oplossingen zoals energiemanagementsystemen, lokale opslag (bijv. batterijen) en decentrale opwek (bijv. zonnepanelen of WKK's). Zo zorgen we ervoor dat uw bedrijfsvoering niet wordt beperkt door netproblemen.",
-  },
-  {
-    icon: Leaf,
-    title: "Duurzaamheidsadvies",
-    description: "Duurzaam ondernemen is niet alleen maatschappelijk verantwoord, maar ook economisch slim. Wij helpen bedrijven om hun duurzaamheidsstrategie vorm te geven en te onderbouwen met harde data.",
-  },
-  {
-    icon: Search,
-    title: "Energiescan",
-    description: "Met een energiescan brengen we het energieverbruik van een gebouw in kaart, met aandacht voor onder andere licht, warmte, isolatie, zonnepanelen en batterijen. U ontvangt een compact en helder advies met concrete kansen voor besparing en verduurzaming.",
-  },
-];
+import { clientProjects } from "@/data/clients";
+import { strategischServices, energieServices } from "@/data/services";
 
 export const Services = () => {
   const ref = useRef(null);
