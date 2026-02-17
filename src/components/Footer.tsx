@@ -70,6 +70,16 @@ export const Footer = () => {
             <ul className="space-y-2 text-primary-foreground/80">
               <li>Utrecht, Nederland</li>
               <li>info@shift-innovatie.nl</li>
+              <li>
+                <a
+                  href="https://nl.linkedin.com/company/shift-innovatie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-foreground transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </motion.div>
         </div>
