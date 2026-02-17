@@ -146,6 +146,20 @@ export const Services = () => {
           Benieuwd of we iets voor uw organisatie kunnen betekenen? Neem gerust contact op, we gaan graag het gesprek aan.
         </motion.p>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-center mb-16"
+        >
+          <a
+            href="#contact"
+            className="inline-flex items-center px-6 py-3 bg-gradient-primary text-primary-foreground font-semibold rounded-lg shadow-elegant hover:opacity-90 transition-opacity"
+          >
+            Neem contact op
+          </a>
+        </motion.div>
+
         {/* Klanten sectie */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
