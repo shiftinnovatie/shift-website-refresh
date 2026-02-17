@@ -22,7 +22,7 @@ export const About = () => {
           <div className="w-20 h-1 bg-gradient-primary mx-auto mb-8" />
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 w-full max-w-6xl mx-auto mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-24">
           {competencies.map((competency, index) => (
             <motion.div
               key={competency.title}
