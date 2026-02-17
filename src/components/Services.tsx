@@ -202,11 +202,6 @@ export const Services = () => {
                         </div>
                         <h4 className="font-bold text-lg mb-2 text-center">{project.name}</h4>
                         <p className="text-sm text-muted-foreground flex-grow text-justify">{project.description}</p>
-                        {project.year && (
-                          <p className="text-xs text-primary font-medium mt-4">
-                            Uitgevoerd: {project.year}
-                          </p>
-                        )}
                       </CardContent>
                     </Card>
                   </CarouselItem>
