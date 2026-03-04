@@ -26,22 +26,12 @@ export const consultants: ConsultantInfo[] = [
     phone: "+31 6 81156020",
   },
   {
-    name: "Tycho Sangers",
-    image:
-      "https://cdn.sanity.io/images/mwby6hwm/production/b550804eb359d56cec8d1e919d62ce56d1037a7c-5198x3462.png?rect=868,0,3462,3462&w=512&h=512",
-    study: "Master Energy Science",
-    description:
-      "Tycho heeft zijn bachelor Natuurwetenschap & Innovatiemanagement afgerond en studeert nu de Master Energy Science. Zijn hoofdinteresse ligt bij het optimaliseren van de energietransitie, maar hij heeft een brede interesse in verschillende disciplines, zoals Innovatie, Duurzaamheid en Beleid.",
-    email: "t.sangers@shift-innovatie.nl",
-    phone: "06-22251850",
-  },
-  {
     name: "Fabian Tobben",
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/76e1d7bf341290d1b91526ee0bccf2a6839eba0a-4497x3456.jpg?rect=521,0,3456,3456&w=512&h=512",
     study: "Master Earth, Surface and Water",
     description:
-      "Fabian is bachelor student Natuurwetenschap en Innovatiemanagement en volgt de energie en transport track. Hij is erg geïnteresseerd in het integreren van technologie in de maatschappij. Verder hoopt hij bij te kunnen dragen aan interessante vraagstukken met een creatieve blik.",
+      "Fabian studeert de master Earth, Surface and Water aan de Universiteit Utrecht. Hij is erg geïnteresseerd in het integreren van technologie in de maatschappij. Verder hoopt hij bij te kunnen dragen aan interessante vraagstukken met een creatieve blik.",
     email: "f.tobben@shift-innovatie.nl",
     phone: "+31 6 33041190",
   },

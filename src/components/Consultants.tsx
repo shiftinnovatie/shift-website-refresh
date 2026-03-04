@@ -119,8 +119,8 @@ export const Consultants = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const consultantsRow1 = consultants.slice(0, 4);
-  const consultantsRow2 = consultants.slice(4, 7);
+  const consultantsRow1 = consultants.slice(0, 3);
+  const consultantsRow2 = consultants.slice(3, 6);
   const advisorsRow1 = advisors.slice(0, 4);
   const advisorsRow2 = advisors.slice(4, 6);
 
@@ -139,7 +139,7 @@ export const Consultants = () => {
         </motion.div>
 
         <div className="flex flex-col items-center gap-8 mb-24">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             {consultantsRow1.map((consultant, index) => (
               <ConsultantCard
                 key={consultant.name}
