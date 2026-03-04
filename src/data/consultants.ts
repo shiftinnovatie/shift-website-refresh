@@ -41,7 +41,7 @@ export const consultants: ConsultantInfo[] = [
       "https://cdn.sanity.io/images/mwby6hwm/production/8a0b9a92d0147d4ea5ef0c265f56b472f5b289d6-834x1166.jpg?rect=0,166,834,834&w=512&h=512",
     study: "Natuurwetenschap & Innovatiemanagement",
     description:
-      "Guust is een bachelor student Natuurwetenschap en Innovatiemanagement. Hij is breed geïnteresseerd in de energie en transport sector. Hiernaast heeft hij zich tijdens zijn studie extra verdiept in de wiskunde. Guust is geïnteresseerd in het implementeren van technische innovaties. Naast zijn studie is Guust een jaar lang fulltime actief geweest als penningmeester van een studievereniging. Hier heeft hij veel geleerd over het beheren van het vermogen van een vereniging.",
+      "Guust is een bachelor student Natuurwetenschap en Innovatiemanagement. Hij is breed geïnteresseerd in de energie en transport sector. Hiernaast heeft hij zich tijdens zijn studie extra verdiept in de wiskunde en informatica. Guust is geïnteresseerd in het implementeren van technische innovaties. Naast zijn studie is Guust een jaar lang fulltime actief geweest als penningmeester van een studievereniging. Hier heeft hij veel geleerd over het beheren van het vermogen van een vereniging.",
     email: "g.bartels@shift-innovatie.nl",
     phone: "06-23274997",
   },
