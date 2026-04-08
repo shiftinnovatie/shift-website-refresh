@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Linkedin } from "lucide-react";
 
 export const Contact = () => {
   const ref = useRef(null);
@@ -24,7 +24,7 @@ export const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -54,6 +54,26 @@ export const Contact = () => {
             </div>
             <h3 className="text-xl font-bold mb-2">Locatie</h3>
             <p className="text-muted-foreground">Utrecht, Nederland</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="bg-card p-8 rounded-xl shadow-card-hover border border-border hover:border-primary transition-all duration-300 text-center"
+          >
+            <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <Linkedin className="w-6 h-6 text-primary-foreground" />
+            </div>
+            <h3 className="text-xl font-bold mb-2">LinkedIn</h3>
+            <a
+              href="https://nl.linkedin.com/company/shift-innovatie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              Shift Innovatie
+            </a>
           </motion.div>
         </div>
       </div>
