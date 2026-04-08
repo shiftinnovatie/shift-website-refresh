@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import teamPhoto from "@/assets/team-photo.jpg";
 import { competencies } from "@/data/competencies";
 
 export const About = () => {
