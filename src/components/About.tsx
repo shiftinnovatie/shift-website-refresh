@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import teamPhoto from "@/assets/team-photo.jpg";
 import { competencies } from "@/data/competencies";
 
 export const About = () => {
@@ -58,7 +59,7 @@ export const About = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <img
-              src="https://cdn.sanity.io/images/mwby6hwm/production/a2e99c31468353fdf8692019f046d35dddc13eb3-3923x2675.jpg"
+              src={teamPhoto}
               alt="Over Shift Innovatie"
               className="rounded-2xl shadow-card-hover w-full"
             />
