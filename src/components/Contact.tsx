@@ -62,10 +62,27 @@ export const Contact = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="bg-card p-8 rounded-xl shadow-card-hover border border-border hover:border-primary transition-all duration-300 text-center"
           >
-            <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-              <Linkedin className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <h3 className="text-xl font-bold mb-2">LinkedIn</h3>
+            <a
+              href="https://nl.linkedin.com/company/shift-innovatie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-fit mx-auto mb-4"
+              aria-label="Bezoek de LinkedIn-pagina van Shift Innovatie"
+            >
+              <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center">
+                <Linkedin className="w-6 h-6 text-primary-foreground" />
+              </div>
+            </a>
+            <h3 className="text-xl font-bold mb-2">
+              <a
+                href="https://nl.linkedin.com/company/shift-innovatie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                LinkedIn
+              </a>
+            </h3>
             <a
               href="https://nl.linkedin.com/company/shift-innovatie"
               target="_blank"
