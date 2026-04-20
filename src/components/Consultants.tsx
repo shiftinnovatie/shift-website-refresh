@@ -84,29 +84,33 @@ const ConsultantCard = ({
               </div>
             </DialogHeader>
             <div className="space-y-4">
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {consultant.description}
-              </p>
-              <div className="flex flex-col gap-2 pt-4 border-t">
-                {consultant.email && (
-                  <a
-                    href={`mailto:${consultant.email}`}
-                    className="flex items-center gap-2 text-sm text-primary hover:underline"
-                  >
-                    <Mail className="w-4 h-4" />
-                    {consultant.email}
-                  </a>
-                )}
-                {consultant.phone && (
-                  <a
-                    href={`tel:${consultant.phone}`}
-                    className="flex items-center gap-2 text-sm text-primary hover:underline"
-                  >
-                    <Phone className="w-4 h-4" />
-                    {consultant.phone}
-                  </a>
-                )}
-              </div>
+              {consultant.description && (
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {consultant.description}
+                </p>
+              )}
+              {(consultant.email || consultant.phone) && (
+                <div className="flex flex-col gap-2 pt-4 border-t">
+                  {consultant.email && (
+                    <a
+                      href={`mailto:${consultant.email}`}
+                      className="flex items-center gap-2 text-sm text-primary hover:underline"
+                    >
+                      <Mail className="w-4 h-4" />
+                      {consultant.email}
+                    </a>
+                  )}
+                  {consultant.phone && (
+                    <a
+                      href={`tel:${consultant.phone}`}
+                      className="flex items-center gap-2 text-sm text-primary hover:underline"
+                    >
+                      <Phone className="w-4 h-4" />
+                      {consultant.phone}
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </DialogContent>
         </Dialog>
