@@ -1,6 +1,7 @@
 import floorDeJongImage from "@/assets/floor-de-jong.jpg";
 import larsDonathImage from "@/assets/lars-donath.jpg";
 import philipSmidsImage from "@/assets/philip-smids.jpg";
+import guustBartelsImage from "@/assets/guust-bartels.jpg";
 
 export interface ConsultantInfo {
   name: string;
@@ -38,8 +39,7 @@ export const consultants: ConsultantInfo[] = [
   },
   {
     name: "Guust Bartels",
-    image:
-      "https://cdn.sanity.io/images/mwby6hwm/production/8a0b9a92d0147d4ea5ef0c265f56b472f5b289d6-834x1166.jpg?rect=0,166,834,834&w=512&h=512",
+    image: guustBartelsImage,
     study: "Natuurwetenschap & Innovatiemanagement",
     description:
       "Guust is een bachelor student Natuurwetenschap en Innovatiemanagement. Hij is breed geïnteresseerd in de energie en transport sector. Hiernaast heeft hij zich tijdens zijn studie extra verdiept in de wiskunde en informatica. Guust is geïnteresseerd in het implementeren van technische innovaties. Naast zijn studie is Guust een jaar lang fulltime actief geweest als penningmeester van een studievereniging. Hier heeft hij veel geleerd over het beheren van het vermogen van een vereniging.",
