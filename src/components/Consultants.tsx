@@ -121,6 +121,7 @@ export const Consultants = () => {
 
   const consultantsRow1 = consultants.slice(0, 3);
   const consultantsRow2 = consultants.slice(3, 6);
+  const consultantsRow3 = consultants.slice(6);
   const advisorsRow1 = advisors.slice(0, 4);
   const advisorsRow2 = advisors.slice(4, 6);
 
