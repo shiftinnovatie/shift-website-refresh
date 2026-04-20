@@ -48,8 +48,7 @@ export const consultants: ConsultantInfo[] = [
   },
   {
     name: "Philip Smids",
-    image:
-      "https://cdn.sanity.io/images/mwby6hwm/production/52c95902aad935c69957e4dee6248f4f798f2f62-1568x2088.jpg?rect=0,260,1568,1568&w=512&h=512",
+    image: philipSmidsImage,
     study: "Master Complex Systems Engineering and Management",
     description:
       "Philip is master student Complex Systems Engineering and Management aan de TU Delft, waarbinnen hij zich heeft gespecialiseerd in de transport en logistiek. Tijdens zijn bachelor heeft hij zich verder verdiept in het sociaal ondernemerschap, waarbij hij erg geïnteresseerd is in maatschappelijk verantwoord ondernemen en het opstellen van duurzame bedrijfsmodellen. Verder hoopt hij bij te dragen aan het vinden van creatieve oplossingen en uitdagende vraagstukken.",
