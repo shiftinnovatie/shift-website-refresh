@@ -2,6 +2,7 @@ import floorDeJongImage from "@/assets/floor-de-jong.jpg";
 import larsDonathImage from "@/assets/lars-donath.jpg";
 import philipSmidsImage from "@/assets/philip-smids.jpg";
 import guustBartelsImage from "@/assets/guust-bartels.jpg";
+import lotteVisserImage from "@/assets/lotte-visser.jpg";
 
 export interface ConsultantInfo {
   name: string;
@@ -72,6 +73,11 @@ export const consultants: ConsultantInfo[] = [
       "Lars is bachelor student Natuurwetenschap & Innovatiemanagement en hij volgt de track energie en transport. Hij is geïnteresseerd in alles wat te maken heeft met innovatie, technologie en duurzaamheid. Verder hoopt hij hier nog meer over te leren en zo bij te kunnen dragen aan het maken van impact.",
     email: "l.donath@shift-innovatie.nl",
     phone: "+31 6 30068167",
+  },
+  {
+    name: "Lotte Visser",
+    image: lotteVisserImage,
+    study: "Natuurwetenschap & Innovatiemanagement",
   },
 ];
 

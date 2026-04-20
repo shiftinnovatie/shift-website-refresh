@@ -121,6 +121,7 @@ export const Consultants = () => {
 
   const consultantsRow1 = consultants.slice(0, 3);
   const consultantsRow2 = consultants.slice(3, 6);
+  const consultantsRow3 = consultants.slice(6);
   const advisorsRow1 = advisors.slice(0, 4);
   const advisorsRow2 = advisors.slice(4, 6);
 
@@ -160,6 +161,19 @@ export const Consultants = () => {
               />
             ))}
           </div>
+          {consultantsRow3.length > 0 && (
+            <div className="grid grid-cols-1 gap-8 md:gap-12">
+              {consultantsRow3.map((consultant, index) => (
+                <ConsultantCard
+                  key={consultant.name}
+                  consultant={consultant}
+                  index={index}
+                  isInView={isInView}
+                  delay={0.7}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <motion.div
