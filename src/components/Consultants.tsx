@@ -24,7 +24,7 @@ const ConsultantCard = ({
   accentColor?: "primary" | "secondary";
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const hasInfo = consultant.description;
+  const hasInfo = true;
 
   return (
     <>
