@@ -74,6 +74,11 @@ export const consultants: ConsultantInfo[] = [
     email: "l.donath@shift-innovatie.nl",
     phone: "+31 6 30068167",
   },
+  {
+    name: "Lotte Visser",
+    image: lotteVisserImage,
+    study: "Natuurwetenschap & Innovatiemanagement",
+  },
 ];
 
 /**
