@@ -1,6 +1,7 @@
 import floorDeJongImage from "@/assets/floor-de-jong.jpg";
 import larsDonathImage from "@/assets/lars-donath.jpg";
 import philipSmidsImage from "@/assets/philip-smids.jpg";
+import guustBartelsImage from "@/assets/guust-bartels.jpg";
 
 export interface ConsultantInfo {
   name: string;
