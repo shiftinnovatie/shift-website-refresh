@@ -161,6 +161,19 @@ export const Consultants = () => {
               />
             ))}
           </div>
+          {consultantsRow3.length > 0 && (
+            <div className="grid grid-cols-1 gap-8 md:gap-12">
+              {consultantsRow3.map((consultant, index) => (
+                <ConsultantCard
+                  key={consultant.name}
+                  consultant={consultant}
+                  index={index}
+                  isInView={isInView}
+                  delay={0.7}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <motion.div
