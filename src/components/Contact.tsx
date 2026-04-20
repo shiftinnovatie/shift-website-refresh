@@ -25,23 +25,21 @@ export const Contact = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <motion.div
+          <motion.a
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-card p-8 rounded-xl shadow-card-hover border border-border hover:border-primary transition-all duration-300 text-center"
+            href="mailto:info@shift-innovatie.nl"
+            className="bg-card p-8 rounded-xl shadow-card-hover border border-border hover:border-primary transition-all duration-300 text-center block"
           >
             <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
               <Mail className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-xl font-bold mb-2">Email</h3>
-            <a
-              href="mailto:info@shift-innovatie.nl"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
+            <span className="text-muted-foreground hover:text-primary transition-colors">
               info@shift-innovatie.nl
-            </a>
-          </motion.div>
+            </span>
+          </motion.a>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -56,42 +54,26 @@ export const Contact = () => {
             <p className="text-muted-foreground">Utrecht, Nederland</p>
           </motion.div>
 
-          <motion.div
+          <motion.a
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-card p-8 rounded-xl shadow-card-hover border border-border hover:border-primary transition-all duration-300 text-center"
+            href="https://nl.linkedin.com/company/shift-innovatie"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-card p-8 rounded-xl shadow-card-hover border border-border hover:border-primary transition-all duration-300 text-center block"
+            aria-label="Bezoek de LinkedIn-pagina van Shift Innovatie"
           >
-            <a
-              href="https://nl.linkedin.com/company/shift-innovatie"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-fit mx-auto mb-4"
-              aria-label="Bezoek de LinkedIn-pagina van Shift Innovatie"
-            >
-              <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center">
-                <Linkedin className="w-6 h-6 text-primary-foreground" />
-              </div>
-            </a>
-            <h3 className="text-xl font-bold mb-2">
-              <a
-                href="https://nl.linkedin.com/company/shift-innovatie"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-              >
-                LinkedIn
-              </a>
+            <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <Linkedin className="w-6 h-6 text-primary-foreground" />
+            </div>
+            <h3 className="text-xl font-bold mb-2 hover:text-primary transition-colors">
+              LinkedIn
             </h3>
-            <a
-              href="https://nl.linkedin.com/company/shift-innovatie"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
+            <span className="text-muted-foreground hover:text-primary transition-colors">
               Shift Innovatie
-            </a>
-          </motion.div>
+            </span>
+          </motion.a>
         </div>
       </div>
     </section>
