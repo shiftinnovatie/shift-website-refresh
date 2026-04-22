@@ -88,6 +88,7 @@ export const Footer = () => {
           <p>
             &copy; {new Date().getFullYear()} Shift Innovatie. Alle rechten voorbehouden.
           </p>
+          <p className="mt-2">KVK-nummer: 51212951</p>
         </div>
       </div>
     </footer>
