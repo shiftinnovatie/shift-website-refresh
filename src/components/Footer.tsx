@@ -15,7 +15,7 @@ export const Footer = () => {
               <img src={shiftLogo} alt="Shift Innovatie" className="h-10" />
             </div>
             <p className="text-primary-foreground/80">
-              Jonge Denkers, Slimme Oplossingen op maat voor elk vraagstuk
+              Jonge Denkers, Slimme Oplossingen op maat voor elk vraagstuk.
             </p>
           </motion.div>
 
