@@ -78,7 +78,7 @@ export const Hero = () => {
                 onClick={() => scrollToSection("services")}
                 className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-elegant group"
               >
-                Ontdek meer
+                Bekijk wat we doen
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
