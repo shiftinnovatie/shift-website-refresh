@@ -75,7 +75,7 @@ export const About = () => {
               Wij zijn allemaal opgeleid in Natuurwetenschap en Innovatiemanagement aan de Universiteit Utrecht. Dat is geen toeval, het is de reden waarom we innovatievraagstukken anders aanpakken dan een generalist. We begrijpen de systemen erachter, niet alleen de symptomen. Daarbij zijn wij opgeleid tot het doen van strategisch en toegepast onderzoek in uiteenlopende domeinen, van energie en transport tot life sciences.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Shift bestaat sinds 2010 en is opgericht met als doel om de geleerde theorieën en verkregen inzichten nog tijdens de studie in de praktijk te brengen en hiermee ervaring op te doen als voorbereiding op een verdere carrière.
+              Shift bestaat sinds 2010. Onze kracht zit in wat wíj niet hebben: geen interne politiek, geen aannames die al jaren niet zijn uitgedaagd, geen reden om de moeilijke vraag te omzeilen. Waar interne teams soms te dicht op het vraagstuk zitten, brengen wij de distantie die nodig is. Zonder agenda, zonder omhaal.
             </p>
           </motion.div>
         </div>
