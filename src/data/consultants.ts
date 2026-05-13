@@ -78,6 +78,8 @@ export const consultants: ConsultantInfo[] = [
     name: "Lotte Visser",
     image: lotteVisserImage,
     study: "Natuurwetenschap & Innovatiemanagement",
+    description:
+      "Lotte is een bachelor student Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt zij de track life sciences en daarnaast volgt zij de minor Brains and Bodies. Zij is geïnteresseerd in het innoveren binnen de gezondheidszorg en verduurzaming op dit vlak. Ook verheugt zij zich erop haar expertise uit te breiden door actief bij te dragen aan het vinden van oplossingen voor innovatieve problemen.",
   },
 ];
 
