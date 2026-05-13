@@ -32,7 +32,7 @@ export const Services = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Diensten</h2>
           <div className="w-20 h-1 bg-gradient-primary mx-auto mb-8" />
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Onze kracht ligt in het analyseren van complexe vraagstukken en het vertalen ervan naar heldere, onderbouwde adviezen. Dit doen we aan de hand van 2 pijlers:
+            Onze kracht ligt in het analyseren van complexe vraagstukken en het vertalen ervan naar heldere, onderbouwde adviezen. Dit doen we aan de hand van 2 pijlers waar onze achtergrond en ervaring het sterkst is:
           </p>
         </motion.div>
 
