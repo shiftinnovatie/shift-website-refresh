@@ -20,7 +20,7 @@ export const competencies: CompetencyItem[] = [
   {
     icon: Target,
     title: "Flexibel Maatwerk",
-    description: "Geen standaardoplossingen – elk project is afgestemd op de specifieke context en doelstelling.",
+    description: "Geen standaardoplossingen, elk project is afgestemd op de specifieke context en doelstelling.",
   },
   {
     icon: Users,
