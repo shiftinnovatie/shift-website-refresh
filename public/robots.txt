@@ -1,16 +1,16 @@
 User-agent: Googlebot
-Allow: /
+Disallow: /blog
 
 User-agent: Bingbot
-Allow: /
+Disallow: /blog
 
 User-agent: Twitterbot
-Allow: /
+Disallow: /blog
 
 User-agent: facebookexternalhit
-Allow: /
+Disallow: /blog
 
 User-agent: *
-Allow: /
+Disallow: /blog
 
 Sitemap: https://shift-innovatie.nl/sitemap.xml
