@@ -30,7 +30,7 @@ export const competencies: CompetencyItem[] = [
   {
     icon: BookOpen,
     title: "Leergierig",
-    description: "Brede gedeelde interesse om de brug te slaan tussen organisatie en student en hier wederkerig van te leren.",
+    description: "Brede interesse en snel ingewerkt in uw sector. We brengen de nieuwste kennis mee en leren tegelijk van uw praktijk: daar worden beide kanten beter van.",
   },
   {
     icon: Lightbulb,

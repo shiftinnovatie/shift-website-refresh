@@ -1,4 +1,4 @@
-import { FileText, BarChart3, Database, Battery, Leaf, Search } from "lucide-react";
+import { FileText, BarChart3, Database, Battery, Leaf, Search, FlaskConical } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface ServiceItem {
@@ -15,11 +15,11 @@ export const strategischServices: ServiceItem[] = [
   {
     icon: FileText,
     title: "Businesscase-ontwikkeling",
-    description: "Wij ondersteunen bij het vertalen van een sterk idee naar een heldere en overtuigende businesscase. Daarbij ligt de focus op haalbaarheid, waardecreatie en strategische positionering. Of het nu gaat om een nieuw product, dienst of verdienmodel, wij zorgen dat uw plannen onderbouwd en professioneel gepresenteerd zijn richting klanten, partners en investeerders.",
+    description: "Wij ondersteunen u bij het vertalen van een sterk idee naar een heldere en overtuigende businesscase. Daarbij ligt de focus op haalbaarheid, waardecreatie en strategische positionering. Of het nu gaat om een nieuw product, dienst of verdienmodel, wij zorgen dat uw plannen onderbouwd en professioneel gepresenteerd zijn aan klanten, partners en investeerders.",
   },
   {
     icon: BarChart3,
-    title: "Marktonderzoek en Concurrentieanalyse",
+    title: "Marktonderzoek en concurrentieanalyse",
     description: "In een markt die continu in beweging is, is inzicht essentieel. Wij brengen de marktstructuur, klantbehoeften en de concurrenten helder in kaart. Met een scherp oog voor trends helpen we u strategische keuzes te maken die passen bij uw ambities en u onderscheiden van de concurrentie.",
   },
   {
@@ -37,7 +37,7 @@ export const energieServices: ServiceItem[] = [
   {
     icon: Battery,
     title: "Netcongestiescan",
-    description: "Het Nederlandse elektriciteitsnet raakt steeds voller. Bedrijven ervaren hierdoor beperkingen bij het afnemen of terugleveren van stroom. Wij analyseren uw huidige en toekomstige energiebehoefte, en verkennen slimme oplossingen zoals energiemanagementsystemen, lokale opslag (bijv. batterijen) en decentrale opwek (bijv. zonnepanelen of WKK's). Zo zorgen we ervoor dat uw bedrijfsvoering niet wordt beperkt door netproblemen.",
+    description: "Loopt uw bedrijf tegen de grenzen van het stroomnet aan? Het Nederlandse elektriciteitsnet raakt steeds voller. Bedrijven ervaren hierdoor beperkingen bij het afnemen of terugleveren van stroom. Wij analyseren uw huidige en toekomstige energiebehoefte en verkennen slimme oplossingen, zoals energiemanagementsystemen, lokale opslag (bijv. batterijen) en decentrale opwek (bijv. zonnepanelen of warmtekrachtkoppeling). Zo zorgen we ervoor dat uw bedrijfsvoering niet wordt beperkt door netproblemen.",
   },
   {
     icon: Leaf,
@@ -47,6 +47,11 @@ export const energieServices: ServiceItem[] = [
   {
     icon: Search,
     title: "Energiescan",
-    description: "Met een energiescan brengen we het energieverbruik van een gebouw in kaart, met aandacht voor onder andere licht, warmte, isolatie, zonnepanelen en batterijen. U ontvangt een compact en helder advies met concrete kansen voor besparing en verduurzaming.",
+    description: "Wilt u weten hoe uw pand energiezuiniger kan? Met een energiescan brengen we het energieverbruik van een gebouw in kaart, met aandacht voor onder andere licht, warmte, isolatie, zonnepanelen en batterijen. U ontvangt een compact en helder advies met concrete kansen voor besparing en verduurzaming.",
+  },
+  {
+    icon: FlaskConical,
+    title: "Life Sciences",
+    description: "Van medisch hulpmiddel tot laboratoriumtechnologie: wij helpen organisaties in de life sciences hun innovatie naar de markt te brengen. Met markt- en publicatieanalyses en interviews met stakeholders brengen we in kaart waar de kansen liggen, wie de spelers zijn en welke strategie past bij uw technologie.",
   },
 ];
