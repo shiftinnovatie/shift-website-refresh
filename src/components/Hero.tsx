@@ -111,7 +111,7 @@ export const Hero = () => {
             >
               <img
                 src="https://cdn.sanity.io/images/mwby6hwm/production/e72e7beb5a49b5f22e582a8713ac49793b227518-1525x1532.jpg"
-                alt="Innovation Illustration"
+                alt="Illustratie: innovatievraagstukken helder in kaart brengen"
                 className="w-full h-auto rounded-2xl shadow-elegant"
               />
             </motion.div>

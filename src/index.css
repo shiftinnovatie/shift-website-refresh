@@ -34,6 +34,9 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
+    --linkedin: 207 90% 41%;
+    --linkedin-foreground: 0 0% 100%;
+
     --border: 220 15% 90%;
     --input: 220 15% 90%;
     --ring: 38 92% 50%;
@@ -72,6 +75,9 @@ All colors MUST be HSL.
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 95%;
+
+    --linkedin: 207 90% 41%;
+    --linkedin-foreground: 0 0% 100%;
 
     --border: 220 15% 20%;
     --input: 220 15% 20%;

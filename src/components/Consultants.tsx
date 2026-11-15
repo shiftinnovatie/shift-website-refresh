@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Linkedin } from "lucide-react";
 import { consultants, advisors, type ConsultantInfo } from "@/data/consultants";
 
 const ConsultantCard = ({
@@ -16,12 +16,14 @@ const ConsultantCard = ({
   isInView,
   delay = 0,
   accentColor = "primary",
+  roleLabel = "consultant",
 }: {
   consultant: ConsultantInfo;
   index: number;
   isInView: boolean;
   delay?: number;
   accentColor?: "primary" | "secondary";
+  roleLabel?: string;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const hasInfo = true;
@@ -47,7 +49,7 @@ const ConsultantCard = ({
           >
             <img
               src={consultant.image}
-              alt={consultant.name}
+              alt={`${consultant.name}, ${roleLabel} bij Shift Innovatie`}
               className="w-full h-full object-cover"
             />
           </div>
@@ -59,7 +61,20 @@ const ConsultantCard = ({
             </div>
           )}
         </div>
-        <h3 className="text-lg font-bold mt-4 text-center">{consultant.name}</h3>
+        <div className="flex items-center justify-center gap-2 mt-4">
+          <h3 className="text-lg font-bold text-center">{consultant.name}</h3>
+          {consultant.linkedin && (
+            <a
+              href={consultant.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`LinkedIn-profiel van ${consultant.name}`}
+              className="w-6 h-6 rounded-full bg-linkedin flex items-center justify-center flex-shrink-0 hover:opacity-80 transition-opacity"
+            >
+              <Linkedin className="w-3.5 h-3.5 text-linkedin-foreground" />
+            </a>
+          )}
+        </div>
         {consultant.study && (
           <p className="text-sm text-muted-foreground text-center">{consultant.study}</p>
         )}
@@ -73,11 +88,24 @@ const ConsultantCard = ({
                 <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary mb-4">
                   <img
                     src={consultant.image}
-                    alt={consultant.name}
+                    alt={`${consultant.name}, ${roleLabel} bij Shift Innovatie`}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <DialogTitle className="text-xl">{consultant.name}</DialogTitle>
+                <div className="flex items-center justify-center gap-2">
+                  <DialogTitle className="text-xl">{consultant.name}</DialogTitle>
+                  {consultant.linkedin && (
+                    <a
+                      href={consultant.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`LinkedIn-profiel van ${consultant.name}`}
+                      className="w-6 h-6 rounded-full bg-linkedin flex items-center justify-center flex-shrink-0 hover:opacity-80 transition-opacity"
+                    >
+                      <Linkedin className="w-3.5 h-3.5 text-linkedin-foreground" />
+                    </a>
+                  )}
+                </div>
                 {consultant.study && (
                   <p className="text-sm text-muted-foreground">{consultant.study}</p>
                 )}
@@ -189,10 +217,9 @@ export const Consultants = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Board of Advisors</h2>
           <div className="w-20 h-1 bg-gradient-primary mx-auto mb-8" />
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Onze consultants worden ondersteund door de 'Board of Advisors'. Dit orgaan bestaat uit
-            ervaren ondernemers die werkzaam zijn geweest bij Shift Innovatie. Het doel van de Board
-            of Advisors is het delen van kennis en netwerken, en het bewerkstelligen van een
-            kwaliteitsgarantie binnen Shift Innovatie.
+            Onze consultants worden ondersteund door de Board of Advisors. Dit orgaan bestaat uit
+            ervaren ondernemers die eerder werkzaam zijn geweest bij Shift Innovatie. Jaarlijks komen
+            we samen om kennis te delen en ons netwerk te versterken.
           </p>
         </motion.div>
 
@@ -206,6 +233,7 @@ export const Consultants = () => {
                 isInView={isInView}
                 delay={1}
                 accentColor="secondary"
+                roleLabel="adviseur"
               />
             ))}
           </div>
@@ -218,6 +246,7 @@ export const Consultants = () => {
                 isInView={isInView}
                 delay={1.4}
                 accentColor="secondary"
+                roleLabel="adviseur"
               />
             ))}
           </div>
