@@ -17,7 +17,8 @@ import { strategischServices, energieServices } from "@/data/services";
 export const Services = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [expandedPillar, setExpandedPillar] = useState<string | null>(null);
+  const [strategischOpen, setStrategischOpen] = useState(false);
+  const [energieOpen, setEnergieOpen] = useState(false);
 
   return (
     <section id="services" className="py-24 bg-background">
@@ -37,14 +38,14 @@ export const Services = () => {
         </motion.div>
 
         {/* Two Pillars */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 items-start">
           {/* Strategisch Bedrijfsadvies */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <Card className="h-full border-2 hover:border-primary transition-all duration-300 hover:shadow-elegant">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-elegant">
               <CardContent className="p-8 space-y-4">
                 <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center">
                   <Briefcase className="w-8 h-8 text-primary-foreground" />
@@ -56,14 +57,14 @@ export const Services = () => {
                 </p>
                 <Button
                   variant="ghost"
-                  onClick={() => setExpandedPillar(expandedPillar === "strategisch" ? null : "strategisch")}
+                  onClick={() => setStrategischOpen((open) => !open)}
                   className="w-full justify-between mt-4"
                 >
-                  {expandedPillar === "strategisch" ? "Verberg expertises" : "Bekijk onze expertises"}
-                  {expandedPillar === "strategisch" ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                  {strategischOpen ? "Verberg expertises" : "Bekijk onze expertises"}
+                  {strategischOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
                 </Button>
                 
-                {expandedPillar === "strategisch" && (
+                {strategischOpen && (
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
@@ -93,7 +94,7 @@ export const Services = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Card className="h-full border-2 hover:border-primary transition-all duration-300 hover:shadow-elegant">
+            <Card className="border-2 hover:border-primary transition-all duration-300 hover:shadow-elegant">
               <CardContent className="p-8 space-y-4">
                 <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center">
                   <Zap className="w-8 h-8 text-primary-foreground" />
@@ -105,14 +106,14 @@ export const Services = () => {
                 </p>
                 <Button
                   variant="ghost"
-                  onClick={() => setExpandedPillar(expandedPillar === "energie" ? null : "energie")}
+                  onClick={() => setEnergieOpen((open) => !open)}
                   className="w-full justify-between mt-4"
                 >
-                  {expandedPillar === "energie" ? "Verberg expertises" : "Bekijk onze expertises"}
-                  {expandedPillar === "energie" ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                  {energieOpen ? "Verberg expertises" : "Bekijk onze expertises"}
+                  {energieOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
                 </Button>
                 
-                {expandedPillar === "energie" && (
+                {energieOpen && (
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
