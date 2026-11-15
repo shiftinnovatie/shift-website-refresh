@@ -60,7 +60,7 @@ export const About = () => {
           >
             <img
               src={teamPhoto}
-              alt="Over Shift Innovatie"
+              alt="Het team van Shift Innovatie"
               className="rounded-2xl shadow-card-hover w-full"
             />
           </motion.div>
@@ -72,10 +72,10 @@ export const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Wij zijn allemaal opgeleid in Natuurwetenschap en Innovatiemanagement aan de Universiteit Utrecht. Dat is geen toeval, het is de reden waarom we innovatievraagstukken anders aanpakken dan een generalist. We begrijpen de systemen erachter, niet alleen de symptomen. Daarbij zijn wij opgeleid tot het doen van strategisch en toegepast onderzoek in uiteenlopende domeinen, van energie en transport tot life sciences.
+              Wij hebben allemaal een achtergrond in Natuurwetenschap en Innovatiemanagement aan de Universiteit Utrecht, aangevuld met masters in onder andere duurzame ontwikkeling, aardwetenschappen en complexe systemen. Dat is geen toeval, het is de reden waarom we innovatievraagstukken anders aanpakken dan een generalist. We begrijpen de systemen erachter, niet alleen de symptomen. Daarbij zijn wij opgeleid tot het doen van strategisch en toegepast onderzoek in uiteenlopende domeinen, van energie en transport tot life sciences.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Shift bestaat sinds 2010. Onze kracht zit in wat wíj niet hebben: geen interne politiek, geen aannames die al jaren niet zijn uitgedaagd, geen reden om de moeilijke vraag te omzeilen. Waar interne teams soms te dicht op het vraagstuk zitten, brengen wij de distantie die nodig is. Zonder agenda, zonder omhaal.
+              Shift Innovatie bestaat sinds 2010. Onze kracht zit in wat wíj niet hebben: geen interne politiek, geen aannames die al jaren niet zijn uitgedaagd, geen reden om de moeilijke vraag te omzeilen. Waar interne teams soms te dicht op het vraagstuk zitten, brengen wij de distantie die nodig is. Zonder agenda, zonder omhaal.
             </p>
           </motion.div>
         </div>

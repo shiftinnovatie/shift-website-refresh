@@ -11,6 +11,7 @@ export interface ConsultantInfo {
   description?: string;
   email?: string;
   phone?: string;
+  linkedin?: string;
 }
 
 /**
@@ -27,6 +28,7 @@ export const consultants: ConsultantInfo[] = [
       "Jeroen zit momenteel in het tweede jaar van de master Sustainable Development, gespecialiseerd in de track Energy & Materials. Binnen deze studie staat niet alleen het duurzaam ontwikkelen van energie en materiaalstromen centraal, maar ook het vaststellen van een rechtvaardige transitie naar een duurzame samenleving. Het opstellen van een concrete veranderingsstrategie die leidt tot een meetbare impact op duurzaamheids- of innovatievraagstukken staat voor hem centraal.",
     email: "j.bos@shift-innovatie.nl",
     phone: "+31 6 81156020",
+    linkedin: "https://www.linkedin.com/in/jeroen-bos88/",
   },
   {
     name: "Fabian Tobben",
@@ -37,6 +39,7 @@ export const consultants: ConsultantInfo[] = [
       "Fabian studeert de master Earth, Surface and Water aan de Universiteit Utrecht. Hij is erg geïnteresseerd in het integreren van technologie in de maatschappij. Verder hoopt hij bij te kunnen dragen aan interessante vraagstukken met een creatieve blik.",
     email: "f.tobben@shift-innovatie.nl",
     phone: "+31 6 33041190",
+    linkedin: "https://www.linkedin.com/in/fabian-tobben-493971266/",
   },
   {
     name: "Guust Bartels",
@@ -46,6 +49,7 @@ export const consultants: ConsultantInfo[] = [
       "Guust is een bachelor student Natuurwetenschap en Innovatiemanagement. Hij is breed geïnteresseerd in de energie en transport sector. Hiernaast heeft hij zich tijdens zijn studie extra verdiept in de wiskunde en informatica. Guust is geïnteresseerd in het implementeren van technische innovaties. Naast zijn studie is Guust een jaar lang fulltime actief geweest als penningmeester van een studievereniging. Hier heeft hij veel geleerd over het beheren van het vermogen van een vereniging.",
     email: "g.bartels@shift-innovatie.nl",
     phone: "06-23274997",
+    linkedin: "https://www.linkedin.com/in/guust-bartels/",
   },
   {
     name: "Philip Smids",
@@ -55,6 +59,7 @@ export const consultants: ConsultantInfo[] = [
       "Philip is master student Complex Systems Engineering and Management aan de TU Delft, waarbinnen hij zich heeft gespecialiseerd in de transport en logistiek. Tijdens zijn bachelor heeft hij zich verder verdiept in het sociaal ondernemerschap, waarbij hij erg geïnteresseerd is in maatschappelijk verantwoord ondernemen en het opstellen van duurzame bedrijfsmodellen. Verder hoopt hij bij te dragen aan het vinden van creatieve oplossingen en uitdagende vraagstukken.",
     email: "p.smids@shift-innovatie.nl",
     phone: "+31 6 11451827",
+    linkedin: "https://www.linkedin.com/in/philip-smids/",
   },
   {
     name: "Floor de Jong",
@@ -64,6 +69,7 @@ export const consultants: ConsultantInfo[] = [
       "Floor is een bachelor student Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt hij de track energie en transport en daarnaast volgt hij een minor in Economics and Business Economics. Hij is geïnteresseerd in het raakvlak van duurzaamheid, technologie en ondernemerschap. Verder kijkt hij ernaar uit om bij te dragen aan het helpen van bedrijven bij het oplossen van duurzame en innovatieve vraagstukken.",
     email: "f.dejong@shift-innovatie.nl",
     phone: "+31 6 80129607",
+    linkedin: "https://www.linkedin.com/in/floor-de-jong-a42390239",
   },
   {
     name: "Lars Donath",
@@ -73,6 +79,7 @@ export const consultants: ConsultantInfo[] = [
       "Lars is bachelor student Natuurwetenschap & Innovatiemanagement en hij volgt de track energie en transport. Hij is geïnteresseerd in alles wat te maken heeft met innovatie, technologie en duurzaamheid. Verder hoopt hij hier nog meer over te leren en zo bij te kunnen dragen aan het maken van impact.",
     email: "l.donath@shift-innovatie.nl",
     phone: "+31 6 30068167",
+    linkedin: "https://www.linkedin.com/in/lars-donath-6209292b8/",
   },
   {
     name: "Lotte Visser",
@@ -80,6 +87,7 @@ export const consultants: ConsultantInfo[] = [
     study: "Natuurwetenschap & Innovatiemanagement",
     description:
       "Lotte is een bachelor student Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt zij de track life sciences en daarnaast volgt zij de minor Brains and Bodies. Zij is geïnteresseerd in het innoveren binnen de gezondheidszorg en verduurzaming op dit vlak. Ook verheugt zij zich erop haar expertise uit te breiden door actief bij te dragen aan het vinden van oplossingen voor innovatieve problemen.",
+    linkedin: "https://www.linkedin.com/in/lotte-visser-240b21330/",
   },
 ];
 

@@ -48,6 +48,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        linkedin: {
+          DEFAULT: "hsl(var(--linkedin))",
+          foreground: "hsl(var(--linkedin-foreground))",
+        },
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',

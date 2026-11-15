@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Briefcase, Zap, ChevronDown, ChevronUp, ChevronLeft, ChevronRight } from "lucide-react";
+import { Briefcase, Zap, ChevronDown, ChevronUp } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -13,6 +13,25 @@ import {
 } from "@/components/ui/carousel";
 import { clientProjects } from "@/data/clients";
 import { strategischServices, energieServices } from "@/data/services";
+
+const werkwijze = [
+  {
+    title: "Kennismaking",
+    description: "In een vrijblijvend gesprek bespreken we uw vraagstuk, doelen en context.",
+  },
+  {
+    title: "Voorstel",
+    description: "U ontvangt een projectvoorstel op maat, met aanpak, planning en kosten.",
+  },
+  {
+    title: "Onderzoek",
+    description: "Ons team gaat aan de slag. Tussentijds houden we contact, zodat u weet waar we staan.",
+  },
+  {
+    title: "Advies",
+    description: "U ontvangt heldere resultaten en concrete aanbevelingen, toegelicht in een eindpresentatie.",
+  },
+];
 
 export const Services = () => {
   const ref = useRef(null);
@@ -53,7 +72,7 @@ export const Services = () => {
                 <h3 className="text-2xl font-bold">Strategisch Bedrijfsadvies</h3>
                 <p className="text-sm text-primary font-medium">Innovatief vooruitdenken: strategieën voor een toekomstbestendige marktpositie.</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Specialisme in Strategisch Bedrijfsadvies, waarmee we ondernemers al meer dan een decennia ondersteunen bij businesscases, marktanalyses en groeistrategieën.
+                  Al meer dan tien jaar ondersteunen we ondernemers met strategisch bedrijfsadvies: van businesscases en marktanalyses tot groeistrategieën.
                 </p>
                 <Button
                   variant="ghost"
@@ -99,10 +118,10 @@ export const Services = () => {
                 <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center">
                   <Zap className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">Energie en Life-sciences</h3>
-                <p className="text-sm text-primary font-medium">Slimme strategieën voor een toekomstbestendige energiehuishouding.</p>
+                <h3 className="text-2xl font-bold">Energie en Life Sciences</h3>
+                <p className="text-sm text-primary font-medium">Slimme strategieën voor een duurzame energietoekomst en innovatieve zorg.</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Brede expertise in Energie en Life-sciences, dankzij onze brede opleiding en individuele specialismes kunnen we snel schakelen tussen thema's en sectoren.
+                  Dankzij onze brede bètaopleiding en individuele specialismen schakelen we snel tussen thema's en sectoren, van netcongestie tot medische technologie.
                 </p>
                 <Button
                   variant="ghost"
@@ -136,6 +155,38 @@ export const Services = () => {
               </CardContent>
             </Card>
           </motion.div>
+        </div>
+
+        {/* Onze werkwijze */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-center mt-24 mb-12"
+        >
+          <h3 className="text-4xl md:text-5xl font-bold mb-6">Onze werkwijze</h3>
+          <div className="w-20 h-1 bg-gradient-primary mx-auto mb-8" />
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Van eerste gesprek tot concreet advies.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+          {werkwijze.map((stap, index) => (
+            <motion.div
+              key={stap.title}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.35 + index * 0.1 }}
+              className="bg-card p-6 rounded-xl shadow-card-hover hover:shadow-elegant transition-all duration-300 border border-border group hover:border-primary text-center flex flex-col items-center"
+            >
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <span className="text-primary-foreground font-bold text-xl">{index + 1}</span>
+              </div>
+              <h4 className="text-xl font-bold mb-2">{stap.title}</h4>
+              <p className="text-muted-foreground">{stap.description}</p>
+            </motion.div>
+          ))}
         </div>
 
         <motion.p
@@ -175,13 +226,13 @@ export const Services = () => {
             Een kleine greep uit de bedrijven die wij hebben mogen helpen met hun
             innovatievraagstukken in de afgelopen tijd!
           </p>
-          <div className="px-12">
+          <div className="flex flex-col md:flex-row md:items-center gap-4">
             <Carousel
               opts={{
                 align: "start",
                 loop: true,
               }}
-              className="w-full"
+              className="w-full min-w-0 flex-1"
             >
               <CarouselContent className="-ml-4">
                 {clientProjects.map((project) => (
@@ -192,7 +243,7 @@ export const Services = () => {
                           {project.logo ? (
                             <img
                               src={project.logo}
-                              alt={project.name}
+                              alt={`Logo ${project.name}`}
                               className="max-h-20 object-contain"
                             />
                           ) : (
@@ -202,15 +253,17 @@ export const Services = () => {
                           )}
                         </div>
                         <h4 className="font-bold text-lg mb-2 text-center">{project.name}</h4>
-                        <p className="text-sm text-muted-foreground flex-grow text-justify">{project.description}</p>
+                        <p className="text-sm text-muted-foreground flex-grow text-justify [hyphens:auto]">{project.description}</p>
                       </CardContent>
                     </Card>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-0" />
-              <CarouselNext className="right-0" />
             </Carousel>
+            <div className="flex justify-center gap-3 md:flex-col md:justify-center">
+              <CarouselPrevious className="static translate-y-0" aria-label="Vorige klant" />
+              <CarouselNext className="static translate-y-0" aria-label="Volgende klant" />
+            </div>
           </div>
         </motion.div>
       </div>
