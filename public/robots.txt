@@ -1,16 +1,4 @@
-User-agent: Googlebot
-Disallow: /blog
-
-User-agent: Bingbot
-Disallow: /blog
-
-User-agent: Twitterbot
-Disallow: /blog
-
-User-agent: facebookexternalhit
-Disallow: /blog
-
 User-agent: *
-Disallow: /blog
+Allow: /
 
 Sitemap: https://shift-innovatie.nl/sitemap.xml
