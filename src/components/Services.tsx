@@ -226,14 +226,15 @@ export const Services = () => {
             Een kleine greep uit de bedrijven die wij hebben mogen helpen met hun
             innovatievraagstukken in de afgelopen tijd!
           </p>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
           <div className="flex flex-col md:flex-row md:items-center gap-4">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full min-w-0 flex-1"
-            >
+            <div className="w-full min-w-0 flex-1">
               <CarouselContent className="-ml-4">
                 {clientProjects.map((project) => (
                   <CarouselItem key={project.name} className="pl-4 md:basis-1/2 lg:basis-1/3">
@@ -259,12 +260,13 @@ export const Services = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-            </Carousel>
+            </div>
             <div className="flex justify-center gap-3 md:flex-col md:justify-center">
               <CarouselPrevious className="static translate-y-0" aria-label="Vorige klant" />
               <CarouselNext className="static translate-y-0" aria-label="Volgende klant" />
             </div>
           </div>
+          </Carousel>
         </motion.div>
       </div>
     </section>
