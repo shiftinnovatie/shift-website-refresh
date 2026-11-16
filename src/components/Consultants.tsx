@@ -51,6 +51,7 @@ const ConsultantCard = ({
               src={consultant.image}
               alt={`${consultant.name}, ${roleLabel} bij Shift Innovatie`}
               className="w-full h-full object-cover"
+              style={{ objectPosition: consultant.imagePosition, transform: consultant.imageScale ? `scale(${consultant.imageScale})` : undefined }}
             />
           </div>
           {hasInfo && (
@@ -151,9 +152,6 @@ export const Consultants = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const consultantsRow1 = consultants.slice(0, 3);
-  const consultantsRow2 = consultants.slice(3, 6);
-  const consultantsRow3 = consultants.slice(6);
   const advisorsRow1 = advisors.slice(0, 4);
   const advisorsRow2 = advisors.slice(4, 6);
 
@@ -171,41 +169,12 @@ export const Consultants = () => {
           <div className="w-20 h-1 bg-gradient-primary mx-auto mb-8" />
         </motion.div>
 
-        <div className="flex flex-col items-center gap-8 mb-24">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-            {consultantsRow1.map((consultant, index) => (
-              <ConsultantCard
-                key={consultant.name}
-                consultant={consultant}
-                index={index}
-                isInView={isInView}
-              />
-            ))}
-          </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-            {consultantsRow2.map((consultant, index) => (
-              <ConsultantCard
-                key={consultant.name}
-                consultant={consultant}
-                index={index}
-                isInView={isInView}
-                delay={0.4}
-              />
-            ))}
-          </div>
-          {consultantsRow3.length > 0 && (
-            <div className="grid grid-cols-1 gap-8 md:gap-12">
-              {consultantsRow3.map((consultant, index) => (
-                <ConsultantCard
-                  key={consultant.name}
-                  consultant={consultant}
-                  index={index}
-                  isInView={isInView}
-                  delay={0.7}
-                />
-              ))}
+        <div className="flex flex-wrap justify-center gap-x-8 gap-y-10 md:gap-x-12 mb-24 max-w-5xl mx-auto">
+          {consultants.map((consultant, index) => (
+            <div key={consultant.name} className="w-[calc(50%-1rem)] md:w-[calc(25%-2.25rem)]">
+              <ConsultantCard consultant={consultant} index={index} isInView={isInView} />
             </div>
-          )}
+          ))}
         </div>
 
         <motion.div

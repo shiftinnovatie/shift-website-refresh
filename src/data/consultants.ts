@@ -12,6 +12,8 @@ export interface ConsultantInfo {
   email?: string;
   phone?: string;
   linkedin?: string;
+  imagePosition?: string;
+  imageScale?: number;
 }
 
 /**
@@ -24,6 +26,8 @@ export const consultants: ConsultantInfo[] = [
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/1490bfda1764f7681dbde1e40074b6747d738674-5208x3476.jpg?rect=866,0,3476,3476&w=512&h=512",
     study: "Master Sustainable Development",
+    imagePosition: "50% 40%",
+    imageScale: 1.25,
     description:
       "Jeroen zit momenteel in het tweede jaar van de master Sustainable Development, gespecialiseerd in de track Energy & Materials. Binnen deze studie staat niet alleen het duurzaam ontwikkelen van energie en materiaalstromen centraal, maar ook het vaststellen van een rechtvaardige transitie naar een duurzame samenleving. Het opstellen van een concrete veranderingsstrategie die leidt tot een meetbare impact op duurzaamheids- of innovatievraagstukken staat voor hem centraal.",
     email: "j.bos@shift-innovatie.nl",
@@ -35,6 +39,8 @@ export const consultants: ConsultantInfo[] = [
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/76e1d7bf341290d1b91526ee0bccf2a6839eba0a-4497x3456.jpg?rect=521,0,3456,3456&w=512&h=512",
     study: "Master Earth, Surface and Water",
+    imagePosition: "50% 40%",
+    imageScale: 1.25,
     description:
       "Fabian studeert de master Earth, Surface and Water aan de Universiteit Utrecht. Hij is erg geïnteresseerd in het integreren van technologie in de maatschappij. Verder hoopt hij bij te kunnen dragen aan interessante vraagstukken met een creatieve blik.",
     email: "f.tobben@shift-innovatie.nl",
@@ -84,6 +90,8 @@ export const consultants: ConsultantInfo[] = [
   {
     name: "Lotte Visser",
     image: lotteVisserImage,
+    imagePosition: "50% 20%",
+    imageScale: 1.35,
     study: "Natuurwetenschap & Innovatiemanagement",
     description:
       "Lotte is een bachelor student Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt zij de track life sciences en daarnaast volgt zij de minor Brains and Bodies. Zij is geïnteresseerd in het innoveren binnen de gezondheidszorg en verduurzaming op dit vlak. Ook verheugt zij zich erop haar expertise uit te breiden door actief bij te dragen aan het vinden van oplossingen voor innovatieve problemen.",
