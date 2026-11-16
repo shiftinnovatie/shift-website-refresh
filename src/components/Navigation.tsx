@@ -25,10 +25,10 @@ export const Navigation = () => {
   };
 
   const navLinks = [
-    { label: "Over ons", id: "about" },
     { label: "Diensten", id: "services" },
+    { label: "Over ons", id: "about" },
     { label: "Consultants", id: "consultants" },
-    { label: "Contact", id: "contact" },
+    { label: "FAQ", id: "faq" },
   ];
 
   return (
