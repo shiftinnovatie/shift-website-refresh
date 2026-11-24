@@ -3,6 +3,7 @@ import larsDonathImage from "@/assets/lars-donath.jpg";
 import philipSmidsImage from "@/assets/philip-smids.jpg";
 import guustBartelsImage from "@/assets/guust-bartels.jpg";
 import lotteVisserImage from "@/assets/lotte-visser.jpg";
+import jelmerKommerImage from "@/assets/jelmer-kommer.jpg";
 
 export interface ConsultantInfo {
   name: string;
@@ -26,8 +27,8 @@ export const consultants: ConsultantInfo[] = [
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/1490bfda1764f7681dbde1e40074b6747d738674-5208x3476.jpg?rect=866,0,3476,3476&w=512&h=512",
     study: "Master Sustainable Development",
-    imagePosition: "50% 40%",
-    imageScale: 1.25,
+    imagePosition: "50% 35%",
+    imageScale: 1.55,
     description:
       "Jeroen zit momenteel in het tweede jaar van de master Sustainable Development, gespecialiseerd in de track Energy & Materials. Binnen deze studie staat niet alleen het duurzaam ontwikkelen van energie en materiaalstromen centraal, maar ook het vaststellen van een rechtvaardige transitie naar een duurzame samenleving. Het opstellen van een concrete veranderingsstrategie die leidt tot een meetbare impact op duurzaamheids- of innovatievraagstukken staat voor hem centraal.",
     email: "j.bos@shift-innovatie.nl",
@@ -39,8 +40,8 @@ export const consultants: ConsultantInfo[] = [
     image:
       "https://cdn.sanity.io/images/mwby6hwm/production/76e1d7bf341290d1b91526ee0bccf2a6839eba0a-4497x3456.jpg?rect=521,0,3456,3456&w=512&h=512",
     study: "Master Earth, Surface and Water",
-    imagePosition: "50% 40%",
-    imageScale: 1.25,
+    imagePosition: "50% 35%",
+    imageScale: 1.55,
     description:
       "Fabian studeert de master Earth, Surface and Water aan de Universiteit Utrecht. Hij is erg geïnteresseerd in het integreren van technologie in de maatschappij. Verder hoopt hij bij te kunnen dragen aan interessante vraagstukken met een creatieve blik.",
     email: "f.tobben@shift-innovatie.nl",
@@ -96,6 +97,14 @@ export const consultants: ConsultantInfo[] = [
     description:
       "Lotte is een bachelor student Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt zij de track life sciences en daarnaast volgt zij de minor Brains and Bodies. Zij is geïnteresseerd in het innoveren binnen de gezondheidszorg en verduurzaming op dit vlak. Ook verheugt zij zich erop haar expertise uit te breiden door actief bij te dragen aan het vinden van oplossingen voor innovatieve problemen.",
     linkedin: "https://www.linkedin.com/in/lotte-visser-240b21330/",
+  },
+  {
+    name: "Jelmer Kommer",
+    image: jelmerKommerImage,
+    study: "Natuurwetenschap & Innovatiemanagement",
+    description:
+      "Jelmer is bachelorstudent Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt hij de track Energy & Transport en daarnaast een minor in Data Science. Hij is geïnteresseerd in vraagstukken rondom duurzaamheid en energie, en de rol die innovatie en data kunnen spelen bij het oplossen hiervan. Verder kijkt hij ernaar uit om zijn kennis in de praktijk toe te passen en bij te dragen aan het oplossen van duurzame en innovatieve vraagstukken.",
+    linkedin: "https://www.linkedin.com/in/jelmer-kommer-9892013a0/",
   },
 ];
 
