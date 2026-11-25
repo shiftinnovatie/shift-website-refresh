@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, MapPin, Linkedin } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin } from "lucide-react";
 
 export const Contact = () => {
   const ref = useRef(null);
@@ -24,7 +24,7 @@ export const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           <motion.a
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -41,10 +41,30 @@ export const Contact = () => {
             </span>
           </motion.a>
 
-          <motion.div
+          <motion.a
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
+            href="tel:+31623274997"
+            className="bg-card p-8 rounded-xl shadow-card-hover border border-border hover:border-primary transition-all duration-300 text-center block"
+            aria-label="Bel voor snel contact met +31 6 23274997"
+          >
+            <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <Phone className="w-6 h-6 text-primary-foreground" />
+            </div>
+            <h3 className="text-xl font-bold mb-2 hover:text-primary transition-colors">
+              Telefoon
+            </h3>
+            <span className="text-muted-foreground hover:text-primary transition-colors">
+              +31 6 23274997
+            </span>
+            <p className="text-sm text-muted-foreground mt-1">Snel contact</p>
+          </motion.a>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="bg-card p-8 rounded-xl shadow-card-hover border border-border hover:border-primary transition-all duration-300 text-center"
           >
             <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
@@ -57,7 +77,7 @@ export const Contact = () => {
           <motion.a
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
             href="https://nl.linkedin.com/company/shift-innovatie"
             target="_blank"
             rel="noopener noreferrer"

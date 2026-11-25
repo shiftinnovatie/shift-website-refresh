@@ -104,6 +104,8 @@ export const consultants: ConsultantInfo[] = [
     study: "Natuurwetenschap & Innovatiemanagement",
     description:
       "Jelmer is bachelorstudent Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt hij de track Energy & Transport en daarnaast een minor in Data Science. Hij is geïnteresseerd in vraagstukken rondom duurzaamheid en energie, en de rol die innovatie en data kunnen spelen bij het oplossen hiervan. Verder kijkt hij ernaar uit om zijn kennis in de praktijk toe te passen en bij te dragen aan het oplossen van duurzame en innovatieve vraagstukken.",
+    email: "j.kommer@shift-innovatie.nl",
+    phone: "+31 6 15268396",
     linkedin: "https://www.linkedin.com/in/jelmer-kommer-9892013a0/",
   },
 ];
