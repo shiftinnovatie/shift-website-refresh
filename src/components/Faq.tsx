@@ -14,7 +14,7 @@ interface FaqItem {
  */
 const faqs: FaqItem[] = [
   {
-    question: "Waarom kiezen voor studenten?",
+    question: "Waarom kiezen voor Shift?",
     answer:
       "Onze consultants brengen de nieuwste academische kennis en een frisse, onafhankelijke blik mee. Omdat we geen belang hebben bij een bepaalde uitkomst, durven we de moeilijke vragen te stellen.",
   },

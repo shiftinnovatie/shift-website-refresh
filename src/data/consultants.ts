@@ -71,9 +71,9 @@ export const consultants: ConsultantInfo[] = [
   {
     name: "Floor de Jong",
     image: floorDeJongImage,
-    study: "Natuurwetenschap & Innovatiemanagement",
+    study: "Alumnus Natuurwetenschap & Innovatiemanagement",
     description:
-      "Floor is een bachelor student Natuurwetenschap & Innovatiemanagement. Hierbinnen volgt hij de track energie en transport en daarnaast volgt hij een minor in Economics and Business Economics. Hij is geïnteresseerd in het raakvlak van duurzaamheid, technologie en ondernemerschap. Verder kijkt hij ernaar uit om bij te dragen aan het helpen van bedrijven bij het oplossen van duurzame en innovatieve vraagstukken.",
+      "Floor is afgestudeerd in Natuurwetenschap & Innovatiemanagement, waarbinnen hij de track energie en transport volgde en daarnaast een minor in Economics and Business Economics. Hij is geïnteresseerd in het raakvlak van duurzaamheid, technologie en ondernemerschap. Om ervaring op te doen in de sector waar zijn studie op aansluit, werkt hij momenteel bij een projectontwikkelaar van zonneparken, wat hem veel leert over duurzame energie in de praktijk. Daarna is hij van plan om nog een master te gaan volgen. Bij Shift Innovatie kijkt hij ernaar uit om bedrijven te helpen bij het oplossen van duurzame en innovatieve vraagstukken.",
     email: "f.dejong@shift-innovatie.nl",
     phone: "+31 6 80129607",
     linkedin: "https://www.linkedin.com/in/floor-de-jong-a42390239",
